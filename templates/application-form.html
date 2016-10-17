@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Apply today!</title>
+{% endblock %}
+
+{% block body %}
+    <h1>Get the job of your dreams today!</h1>
+    Our company is looking for talented women in tech! Start by filling out the form below.<br>
+    <br>
+
+    <form action='/application' method='POST'>
+
+        <label for="firstname">First Name:</label><input type="text" name="firstname">
+        <label for="lastname"><b>Last Name:</b></label><input type="text" name="lastname"><br> 
+        <label for="salary">Salary:</label><input type="number" name="salary"><br>
+        
+
+        Position of Interest:
+            <select name="position">
+             <label for="position">Choose your position of interest</label>
+                <option value="softwareengineer">Software Engineer</option>
+                <option value="qaengineer">QA Engineer</option>
+                <option value="pm">Product Manager</option>
+            </select><br>
+        <input type="submit" name="submit" value="Submit">
+    </form>
+{% endblock %}

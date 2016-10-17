@@ -1,0 +1,20 @@
+Success!
+
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Thank you!</title>
+{% endblock %}
+
+{% block body %}
+    <!doctype html>
+    <html>
+      <head>
+        <title>Thank you</title>
+      </head>
+      <body>
+        <p>Thank you, {{ firstname }} {{ lastname }}, for applying to be a {{ position }}. Your minimum salary requirement is {{ salary }} dollars.</p>
+      </body>
+    </html> 
+
+{% endblock %}
