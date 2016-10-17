@@ -1,11 +1,11 @@
-h1 {
+p {
     border:black solid; 
     font-size:50px;
     border-width: medium;
 }
 
 input, text {
-  background-color : #f0f5f5;
+  background-color : yellow;
 }
 
 input[type=submit] {
